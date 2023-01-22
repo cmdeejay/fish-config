@@ -3,3 +3,10 @@ scoop install curl sudo jq
 winget install -e --id Git.Git
 scoop install neovim gcc
 scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
+scoop install nvm
+nvm install latest
+Install-Module -Name Terminal-Icons -Repository PSGallery -FORCE
+Install-Module -Name z -Force
+Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+scoop install fzf
+Install-Module -Name PSFzf -Scope CurrentUser -Force
