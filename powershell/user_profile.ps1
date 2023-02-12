@@ -23,8 +23,25 @@ Set-Alias g git
 Set-Alias grep findstr
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+Set-Alias activate 'venv/scripts/activate'
 
 #Utilities
+function test () {
+	coverage run --omit='*/venv/*' manage.py test
+}
+
+function run () {
+	python manage.py runserver
+}
+
+function make () {
+	python manage.py makemigrations
+}
+
+function migrate () {
+	python manage.py migrate
+}
+
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
      Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
