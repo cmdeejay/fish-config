@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "coc.nvim": "^0.0.82"
+  }
+}
